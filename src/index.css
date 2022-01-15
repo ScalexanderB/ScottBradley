@@ -41,7 +41,6 @@ main {
 }
 
 .my-pic {
-  clip-path: circle();
   width: 250px;
 }
 
