@@ -5,7 +5,7 @@ function About() {
         <div>
             <h3 className="content is-medium">Hi, I'm Scott Bradley.</h3>
             <hr />
-            <img className="my-pic" src={process.env.PUBLIC_URL + '../public/img/LinkedIn picture.jpg'} alt="Scott Bradley"/>
+            <img className="my-pic" src={process.env.PUBLIC_URL + '/img/LinkedIn picture.jpg'} alt="Scott Bradley"/>
             <p className="content is-italic mt-4">
             I'm an aspiring web developer with a knack for problem solving and a passion for technology.
             </p>
