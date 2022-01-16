@@ -35,7 +35,7 @@ function Header() {
                       target="_blank"
                       href="https://github.com/ScalexanderB"
                     >
-                        <img className="my-logo" src="../img/image2vector.svg" alt="Scott Bradley Logo"/>
+                        <img className="my-logo" src={process.env.PUBLIC_URL + "./img/image2vector.svg"} alt="Scott Bradley Logo"/>
                         <span className="header content is-large">Scott Bradley</span>
                     </a>                     
                 </div>
