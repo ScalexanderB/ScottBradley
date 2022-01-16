@@ -35,8 +35,8 @@ function Header() {
                       target="_blank"
                       href="https://github.com/ScalexanderB"
                     >
-                        <img src="../public/img/SB_v3.svg" alt="Scott Bradley Logo"/>
-                        <span className="content is-large">Scott Bradley</span>
+                        <img className="my-logo" src="/img/image2vector.svg" alt="Scott Bradley Logo"/>
+                        <span className="header content is-large">Scott Bradley</span>
                     </a>                     
                 </div>
             </nav>

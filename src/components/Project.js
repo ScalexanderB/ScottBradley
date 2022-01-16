@@ -10,7 +10,7 @@ function Project(props) {
                             <div className="card-image">
                                 <figure className="image is-4by3">
                                     <a href={project.live} target="_blank" rel="noreferrer">
-                                        <img src={process.env.PUBLIC_URL + project.image} alt="Placeholder image" />
+                                        <img src={process.env.PUBLIC_URL + project.image} alt="" />
                                     </a>    
                                 </figure>
                             </div>
@@ -37,20 +37,20 @@ function Project(props) {
                                         <footer className="card-footer">
                                             <a
                                               href={project.repo}
-                                              className="card-footer-item"
+                                              className="card-footer-item proj-link"
                                               target="_blank"
                                               rel="noreferrer"
                                             >
-                                                Check out the repository!
+                                                Repository
                                             </a>
                                             <br />
                                             <a 
                                               href={project.live}
-                                              className="card-footer-item"
+                                              className="card-footer-item proj-link"
                                               target="_blank"
                                               rel="noreferrer"
                                             >
-                                                Check out the deployed site!
+                                                Live Site
                                             </a>    
                                         </footer>
                                        </div>

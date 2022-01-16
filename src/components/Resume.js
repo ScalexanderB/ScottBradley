@@ -4,11 +4,11 @@ function Resume() {
     return (
         <div className="columns">
             <div className="column">
-                <p className="content is-medium">Resume</p>
+                <h3 className="content is-medium ">Resume</h3>
                 <hr />
 
                 <a
-                  className="button is-primary"
+                  className="button"
                   href={process.env.PUBLIC_URL + "/ScottRes17.pdf"}
                   target="_blank"
                   rel="noreferrer"
@@ -20,7 +20,7 @@ function Resume() {
                 </a>  
             </div>
             <div className="column">
-                <p className="content is-medium">Skills</p>
+                <h3 className="content is-medium">Skills</h3>
                 <hr />
                 <ul>
                     <li>HTML, CSS, Javascript</li>
