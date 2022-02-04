@@ -4,6 +4,16 @@ import Project from "./Project";
 const projects = [
     {
         id: 0,
+        title: "Savoury Subscriptions",
+        languages: "Javascript, React, CSS",
+        packages: "Node.js, Express, Apollo, GraphQL, Mongoose, Stripe, heroku",
+        image: "img/Screen Capture 026 - Savoury Subscriptions - savoury-subscriptions.herokuapp.com.jpg",
+        description: "An app for creating a ingredients delivery subscription based on specific user requirements",
+        repo: "https://github.com/ScalexanderB/Savoury-Subscriptions",
+        live: "https://savoury-subscriptions.herokuapp.com/",
+    },
+    {
+        id: 1,
         title: "MediSearch",
         languages: "Javascript, Handlebars, HTML",
         packages: "Argon2, Sequelize, Node.js, nodemon, mySql2, connect-session-sequelize, dotenv, express-handlebars, express-session, heroku",
@@ -13,7 +23,7 @@ const projects = [
         live: "https://med-i-search.herokuapp.com/",
     },
     {
-        id: 1,
+        id: 2,
         title: "Train To The Beat",
         languages: "HTML, CSS, JS",
         packages: "None",
@@ -23,7 +33,7 @@ const projects = [
         live: "https://scalexanderb.github.io/activity-music/",
     },
     {
-        id: 2,
+        id: 3,
         title: "Note Taker",
         languages: "HTML, CSS, JS",
         packages: "express.js",
@@ -33,7 +43,7 @@ const projects = [
         live: "https://mighty-mountain-08810.herokuapp.com/",
     },
     {
-        id: 3,
+        id: 4,
         title: "Weather Dashboard",
         languages: "HTML, CSS, JS",
         packages: "None",
@@ -43,7 +53,7 @@ const projects = [
         live: "https://scalexanderb.github.io/Weather-Dashboard/",
     },
     {
-        id: 4,
+        id: 5,
         title: "Work Day Scheduler",
         languages: "HTML, CSS, JS",
         packages: "None",
@@ -53,7 +63,7 @@ const projects = [
         live: "",
     },
     {
-        id: 5,
+        id: 6,
         title: "Tech Blog",
         languages: "JS, Handlebars, CSS",
         packages: "bcrypt, connect-session-sequelize, dotenv, express, express-handlebars, express-session, mysql2, path, sequelize",
