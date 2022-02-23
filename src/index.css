@@ -17,10 +17,6 @@ body {
   color: var(--tertiary-color)
 }
 
-.content.is-large {
-  font-size: 40px;
-}
-
 .navbar-item img {
   max-height: 35px;
   height: 50px;
@@ -42,8 +38,22 @@ body {
 }
 
 .navbar-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   margin-bottom: 27px;
   font-size: 10px;
+  color: var(--primary-color)
+}
+
+.tabs {
+  background-color: var(--tertiary-color);
+}
+
+.tabs ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .navbar, .navbar-brand {
@@ -51,11 +61,12 @@ body {
   display: block;
   width: 100%;
   background-color: var(--tertiary-color);
-  color: var(--secondary-color)
+  color: var(--secondary-color);
+
 }
 
 .tabs a {
-  color: var(--tertiary-color);
+  color: var(--primary-color);
   font-size: 20px;
   transition: all 0.3s ease;
 }
@@ -88,7 +99,10 @@ div.navbar-brand {
 
 .navbar .navbar-brand > .navbar-item,
 .navbar .navbar-brand .navbar-link {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
 }
 
 .button, .proj-link {
@@ -140,16 +154,29 @@ footer.footer {
 }
 
 .my-logo {
-  height: 50px;
-  width: 50px;
+  display: flex;
+    width: 75px;
+    height: 75px;
 }
 
+.nav-tabs {
+  height: 100px;
+}
 
+.head-name {
+  color: var(--primary-color);
+  background-color: var(--tertiary-color);
+  font-weight: bold;
+  font-size: 45px;
+}
 
+.nav {
+  padding: 5px;
+}
 
 /* media query */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 2000px) {
   main {
     margin-top: 2em;
     margin-bottom: 2em;
@@ -157,3 +184,4 @@ footer.footer {
     margin-right: 2em;
   }
 }
+

@@ -1,66 +1,195 @@
 import React from "react";
 
-function Project(props) {
-    return (
-        <div>
-            <div className="columns is-desktop is-justify-content-center is-flex-wrap-wrap is-flex-direction-row">
-                {props.projects.map((project) => (
-                    <div className="column is-half">
-                        <div className="card">
-                            <div className="card-image">
-                                <figure className="image is-4by3">
-                                    <a href={project.live} target="_blank" rel="noreferrer">
-                                        <img src={project.image} alt="" />
-                                    </a>    
-                                </figure>
-                            </div>
-                            <div className="card-content">
-                                <div className="media">
-                                    <div className="media-left"></div>
-                                    <div className="media-content">
-                                        <p className="title is-4" key={project.id}>
-                                            {project.title}
-                                        </p>
-                                    </div>
-                                </div>
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Pagination, Navigation } from "swiper/core";
 
-                                <div className="content has-text-left">
-                                    {project.description}
-                                    <br />
-                                    <br />
-                                    <div className="content is-family-code">
-                                        Languages: {project.languages}
-                                        <br />
-                                        NPM Packages: {project.packages}
-                                    </div>
-                                    <div className="card">
-                                        <footer className="card-footer">
-                                            <a
-                                              href={project.repo}
-                                              className="card-footer-item proj-link"
-                                              target="_blank"
-                                              rel="noreferrer"
-                                            >
-                                                Repository
-                                            </a>
-                                            <br />
-                                            <a 
-                                              href={project.live}
-                                              className="card-footer-item proj-link"
-                                              target="_blank"
-                                              rel="noreferrer"
-                                            >
-                                                Live Site
-                                            </a>    
-                                        </footer>
-                                       </div>
-                                   </div> 
-                                </div>
-                            </div>
-                        </div>    
-                ))}
-            </div>
-        </div>
+import medisearchImg from '../assets/Screen Capture 020 - MEDiSEARCH - hospital-staff-app.herokuapp.com.jpg';
+import savourysubsImg from '../assets/Screen Capture 026 - Savoury Subscriptions - savoury-subscriptions.herokuapp.com.jpg';
+import trainToTheBeatImg from '../assets/Screen Capture 016 - Train to the beat - scalexanderb.github.io.jpg';
+import noteTakerImg from '../assets/Screen Capture 018 - Note Taker - mighty-mountain-08810.herokuapp.com.jpg';
+import weatherDashboardImg from '../assets/Screen Capture 017 - Weather Dashboard - scalexanderb.github.io.jpg';
+import workdaySchedulerImg from '../assets/Screen Capture 014 - Work Day Scheduler - scalexanderb.github.io.jpg';
+import techBlogImg from '../assets/Screen Capture 021 - The Tech Blog - mighty-garden-10876.herokuapp.com.jpg';
+
+SwiperCore.use([Pagination, Navigation]); 
+
+function Project() {
+    return (
+
+        <section className="my-5">
+            <h3 className="content is-medium">Recent Projects</h3>
+            <hr></hr>
+        <>
+            <Swiper
+                slidesPerView={1}
+                spaceBetween={30}
+                loop={true}
+                pagination={{
+                    clickable: true,
+                }}
+                navigation={true}
+                className="mySwiper"
+                centeredSlides={true}
+            >
+                <SwiperSlide>
+                    <div className="card mb-3">
+                        <a href="https://savoury-subscriptions.herokuapp.com/" target="_blank" rel="noreferrer">
+                            <img className="card-img-top" src={savourysubsImg} alt="savoury subscriptions app" />
+                        </a>
+                        <div className="card-body">
+                            <h4 className="card-title">Savoury Subscriptions</h4>
+                                <a href="https://github.com/rpanglia/pet-matcher" target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
+                                    GitHub Repository
+                                </a>
+                        </div>
+                    </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    <div className="card mb-3">
+                        <a href="https://med-i-search.herokuapp.com/" target="_blank" rel="noreferrer">
+                            <img className="card-img-top" src={medisearchImg} alt="medisearch app" />
+                        </a>
+                        <div className="card-body">
+                            <h4 className="card-title">MEDiSEARCH</h4>
+                                <a href="https://github.com/rpanglia/Medisearch" target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
+                                    GitHub Repository
+                                </a>
+                        </div>
+                    </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    <div className="card mb-3">
+                        <a href="https://scalexanderb.github.io/activity-music/" target="_blank" rel="noreferrer">
+                            <img className="card-img-top" src={trainToTheBeatImg} alt="Train To The Beat app"/>
+                        </a>
+                        <div className="card-body">
+                            <h4 className="card-title">Train To The Beat</h4>
+                                <a href="https://github.com/ScalexanderB/activity-music" target="_blank" rel="noreferrer" className="btn btn-secondar btn-sm">
+                                    GitHub Repository
+                                </a>
+                        </div>
+                    </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    <div className="card mb-3">
+                        <a href="https://mighty-mountain-08810.herokuapp.com/" target="_blank" rel="noreferrer">
+                            <img className="card-img-top" src={noteTakerImg} alt="note taker app"/>
+                        </a>
+                        <div className="card-body">
+                            <h4 className="card-title">Note Taker</h4>
+                                <a href="https://github.com/ScalexanderB/Your-Note-Taker" target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
+                                    GitHub Repository
+                                </a>
+                        </div>
+                    </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    <div className="card mb-3">
+                        <a href="https://note-it-97.herokuapp.com/" target="_blank" rel="noreferrer">
+                            <img className="card-img-top" src={techBlogImg} alt="tech blog app"/>
+                        </a>
+                        <div className="card-body">
+                            <h4 className="card-title">Note-It</h4>
+                                <a href="https://github.com/rpanglia/Note-It"  target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
+                                    GitHub Repository
+                                </a>
+                        </div>
+                    </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    <div className="card mb-3">
+                        <a href="https://scalexanderb.github.io/Weather-Dashboard/" target="_blank" rel="noreferrer">
+                            <img className="card-img-top" src={weatherDashboardImg}alt="weather dashboard app"/>
+                        </a>
+                        <div className="card-body">
+                            <h4 className="card-title">Weather Dashboard</h4>
+                                <a href="https://github.com/ScalexanderB/Weather-Dashboard" target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
+                                    GitHub Repository
+                                </a>
+                        </div>
+                    </div>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    <div className="card mb-3">
+                        <a href="https://scalexanderb.github.io/Workday-Scheduler/" target="_blank" rel="noreferrer">
+                            <img className="card-img-top" src={workdaySchedulerImg} alt="workday scheduler app" />
+                        </a>
+                        <div className="card-body">
+                            <h4 className="card-title">Work Day scheduler</h4>
+                                <a href="https://github.com/ScalexanderB/Workday-Scheduler" target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
+                                    GitHub Repository
+                                </a>
+                        </div>
+                    </div>
+                </SwiperSlide>
+            </Swiper>
+    </>
+    </section>
+        // <div>
+        //     <div className="columns is-desktop is-justify-content-center is-flex-wrap-wrap is-flex-direction-column">
+        //         {props.projects.map((project) => (
+        //             <div className="column is-full">
+        //                 <div className="card">
+        //                     <div className="card-image">
+        //                         <figure className="image is-4by3">
+        //                             <a href={project.live} target="_blank" rel="noreferrer">
+        //                                 <img src={project.image} alt="" />
+        //                             </a>    
+        //                         </figure>
+        //                     </div>
+        //                     <div className="card-content">
+        //                         <div className="media">
+        //                             <div className="media-left"></div>
+        //                             <div className="media-content">
+        //                                 <p className="title is-4" key={project.id}>
+        //                                     {project.title}
+        //                                 </p>
+        //                             </div>
+        //                         </div>
+
+        //                         <div className="content has-text-left">
+        //                             {project.description}
+        //                             <br />
+        //                             <br />
+        //                             <div className="content is-family-code">
+        //                                 Languages: {project.languages}
+        //                                 <br />
+        //                                 NPM Packages: {project.packages}
+        //                             </div>
+        //                             <div className="card">
+        //                                 <footer className="card-footer">
+        //                                     <a
+        //                                       href={project.repo}
+        //                                       className="card-footer-item proj-link"
+        //                                       target="_blank"
+        //                                       rel="noreferrer"
+        //                                     >
+        //                                         Repository
+        //                                     </a>
+        //                                     <br />
+        //                                     <a 
+        //                                       href={project.live}
+        //                                       className="card-footer-item proj-link"
+        //                                       target="_blank"
+        //                                       rel="noreferrer"
+        //                                     >
+        //                                         Live Site
+        //                                     </a>    
+        //                                 </footer>
+        //                                </div>
+        //                            </div> 
+        //                         </div>
+        //                     </div>
+        //                 </div>    
+        //         ))}
+        //     </div>
+        // </div>
     );
 }
 
