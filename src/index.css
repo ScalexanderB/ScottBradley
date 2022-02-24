@@ -53,7 +53,7 @@ body {
 .tabs ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .navbar, .navbar-brand {
@@ -83,10 +83,7 @@ body {
   font-weight: bold;
 }
 
-h3 {
-  color: var(--secondary-color);
-  font-weight: bolder;
-}
+
 
 .label {
   color: var(--secondary-color);
@@ -130,11 +127,6 @@ main {
   margin-right: 30em;
 }
 
-.my-pic {
-  width: 250px;
-  border-radius: 10px;
-}
-
 .label {
   text-align: left;
 }
@@ -154,9 +146,7 @@ footer.footer {
 }
 
 .my-logo {
-  display: flex;
-    width: 75px;
-    height: 75px;
+ width: 60px;
 }
 
 .nav-tabs {
@@ -172,6 +162,31 @@ footer.footer {
 
 .nav {
   padding: 5px;
+}
+
+.about-box {
+  display: flex;
+  justify-content: left;
+  padding: 10px;
+  margin-bottom: 25px;
+  margin-left:25px;
+  margin-right: 25px;
+}
+
+.about-box img {
+  max-height: 250px;
+  margin-right: 25px;
+  width: 250px;
+  border-radius: 9px;
+}
+
+.about-box p, h2 {
+  text-align: left;
+}
+
+.about-box h2 {
+  color: var(--tertiary-color);
+  font-weight: bolder;
 }
 
 /* media query */
