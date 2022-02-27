@@ -17,8 +17,7 @@ function Project() {
     return (
 
         <section className="my-5">
-            <h3 className="content is-medium">Recent Projects</h3>
-            <hr></hr>
+          
         <>
             <Swiper
                 slidesPerView={1}
@@ -33,99 +32,105 @@ function Project() {
             >
                 <SwiperSlide>
                     <div className="card mb-3">
-                        <a href="https://savoury-subscriptions.herokuapp.com/" target="_blank" rel="noreferrer">
-                            <img className="card-img-top" src={savourysubsImg} alt="savoury subscriptions app" />
-                        </a>
-                        <div className="card-body">
+                    <div className="card-body">
                             <h4 className="card-title">Savoury Subscriptions</h4>
                                 <a href="https://github.com/rpanglia/pet-matcher" target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
                                     GitHub Repository
                                 </a>
                         </div>
+                        <a href="https://savoury-subscriptions.herokuapp.com/" target="_blank" rel="noreferrer">
+                            <img className="card-img-top" src={savourysubsImg} alt="savoury subscriptions app" />
+                        </a>
                     </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
                     <div className="card mb-3">
-                        <a href="https://med-i-search.herokuapp.com/" target="_blank" rel="noreferrer">
-                            <img className="card-img-top" src={medisearchImg} alt="medisearch app" />
-                        </a>
-                        <div className="card-body">
+                    <div className="card-body">
                             <h4 className="card-title">MEDiSEARCH</h4>
                                 <a href="https://github.com/rpanglia/Medisearch" target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
                                     GitHub Repository
                                 </a>
                         </div>
+                        <a href="https://med-i-search.herokuapp.com/" target="_blank" rel="noreferrer">
+                            <img className="card-img-top" src={medisearchImg} alt="medisearch app" />
+                        </a>
+                        
                     </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
                     <div className="card mb-3">
-                        <a href="https://scalexanderb.github.io/activity-music/" target="_blank" rel="noreferrer">
-                            <img className="card-img-top" src={trainToTheBeatImg} alt="Train To The Beat app"/>
-                        </a>
-                        <div className="card-body">
+                    <div className="card-body">
                             <h4 className="card-title">Train To The Beat</h4>
                                 <a href="https://github.com/ScalexanderB/activity-music" target="_blank" rel="noreferrer" className="btn btn-secondar btn-sm">
                                     GitHub Repository
                                 </a>
                         </div>
+                        <a href="https://scalexanderb.github.io/activity-music/" target="_blank" rel="noreferrer">
+                            <img className="card-img-top" src={trainToTheBeatImg} alt="Train To The Beat app"/>
+                        </a>
+                        
                     </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
                     <div className="card mb-3">
-                        <a href="https://mighty-mountain-08810.herokuapp.com/" target="_blank" rel="noreferrer">
-                            <img className="card-img-top" src={noteTakerImg} alt="note taker app"/>
-                        </a>
-                        <div className="card-body">
+                    <div className="card-body">
                             <h4 className="card-title">Note Taker</h4>
                                 <a href="https://github.com/ScalexanderB/Your-Note-Taker" target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
                                     GitHub Repository
                                 </a>
                         </div>
+                        <a href="https://mighty-mountain-08810.herokuapp.com/" target="_blank" rel="noreferrer">
+                            <img className="card-img-top" src={noteTakerImg} alt="note taker app"/>
+                        </a>
+                        
                     </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
                     <div className="card mb-3">
-                        <a href="https://note-it-97.herokuapp.com/" target="_blank" rel="noreferrer">
-                            <img className="card-img-top" src={techBlogImg} alt="tech blog app"/>
-                        </a>
-                        <div className="card-body">
+                    <div className="card-body">
                             <h4 className="card-title">Note-It</h4>
                                 <a href="https://github.com/rpanglia/Note-It"  target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
                                     GitHub Repository
                                 </a>
                         </div>
+                        <a href="https://note-it-97.herokuapp.com/" target="_blank" rel="noreferrer">
+                            <img className="card-img-top" src={techBlogImg} alt="tech blog app"/>
+                        </a>
+                        
                     </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
                     <div className="card mb-3">
-                        <a href="https://scalexanderb.github.io/Weather-Dashboard/" target="_blank" rel="noreferrer">
-                            <img className="card-img-top" src={weatherDashboardImg}alt="weather dashboard app"/>
-                        </a>
-                        <div className="card-body">
+                    <div className="card-body">
                             <h4 className="card-title">Weather Dashboard</h4>
                                 <a href="https://github.com/ScalexanderB/Weather-Dashboard" target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
                                     GitHub Repository
                                 </a>
                         </div>
+                        <a href="https://scalexanderb.github.io/Weather-Dashboard/" target="_blank" rel="noreferrer">
+                            <img className="card-img-top" src={weatherDashboardImg}alt="weather dashboard app"/>
+                        </a>
+                        
                     </div>
                 </SwiperSlide>
 
                 <SwiperSlide>
                     <div className="card mb-3">
-                        <a href="https://scalexanderb.github.io/Workday-Scheduler/" target="_blank" rel="noreferrer">
-                            <img className="card-img-top" src={workdaySchedulerImg} alt="workday scheduler app" />
-                        </a>
-                        <div className="card-body">
+                    <div className="card-body">
                             <h4 className="card-title">Work Day scheduler</h4>
                                 <a href="https://github.com/ScalexanderB/Workday-Scheduler" target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
                                     GitHub Repository
                                 </a>
                         </div>
+                        <a href="https://scalexanderb.github.io/Workday-Scheduler/" target="_blank" rel="noreferrer">
+                            <img className="card-img-top" src={workdaySchedulerImg} alt="workday scheduler app" />
+                        </a>
+                        
                     </div>
                 </SwiperSlide>
             </Swiper>
