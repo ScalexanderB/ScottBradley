@@ -37,9 +37,8 @@ function Contact() {
     };
 
     return (
-        <div>
-            <h3 className="content is-medium">Contact Me</h3>
-            <hr />
+        <div className='contact-me'>
+            <h3 className="content is-medium ">Contact Me</h3>
             <form id="contact-form" onSubmit={handleSubmit}>
                 <div className="field">
                     <label className="label" htmlFor="name">Name</label>
@@ -60,6 +59,15 @@ function Contact() {
                 )}
                 <button className="button is-medium is-fullwidth" data-testid="button">Submit</button>
             </form>
+            <div>
+                    <a href="https://github.com/ScalexanderB" target="_blank" rel="noreferrer">
+                      <img className="social-link" src="img/iconfinder-icon2.svg" alt="Github Logo"/>
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/scottalexanderb/" target="_blank" rel="noreferrer">
+                      <img className="social-link" src="img/104493_linkedin_icon.svg" alt="LinkedIn Logo"/>        
+                    </a>
+            </div>        
         </div>
     );
 }

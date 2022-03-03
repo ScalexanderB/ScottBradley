@@ -228,6 +228,14 @@ footer.footer {
   list-style-type: none;
 }
 
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  padding: 20px;
+  width: 500px;
+}
+
 
 
 /* media query */
