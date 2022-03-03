@@ -107,7 +107,7 @@ div.navbar-brand {
   color: var(--primary-color);
   transition: all 0.3s ease;
   border: none;
-  border-radius: 6px;
+  border-radius: 2px;
 }
 
 .button:hover, .proj-link:hover, .btn:hover {
@@ -215,11 +215,17 @@ footer.footer {
 
 .card {
   background-color: var(--primary-color);
+  color: var(--tertiary-color);
+  
 }
 
 .card-title {
   color: var(--tertiary-color);
   font-size: 30px;
+}
+
+.card ul {
+  list-style-type: none;
 }
 
 

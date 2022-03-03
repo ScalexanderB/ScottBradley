@@ -34,10 +34,20 @@ function Project() {
                     <div className="card mb-3">
                     <div className="card-body">
                             <h4 className="card-title">Savoury Subscriptions</h4>
-                                <a href="https://github.com/rpanglia/pet-matcher" target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
+                                <a href="https://github.com/ScalexanderB/Savoury-Subscriptions" target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
                                     GitHub Repository
                                 </a>
+                                <a href="https://savoury-subscriptions.herokuapp.com/" target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
+                                    Live Application
+                                </a>
                         </div>
+                        <section className="content mt-4 textBox">
+                            <ul>
+                                <li>Javascript, React, CSS</li>
+                                <li>Packages used: Node.js, Express, Apollo, GraphQL, Mongoose, Stripe, heroku</li>
+                                <li>An app for creating a ingredients delivery subscription based on specific user requirements.</li>
+                            </ul>
+                        </section>
                         <a href="https://savoury-subscriptions.herokuapp.com/" target="_blank" rel="noreferrer">
                             <img className="card-img-top" src={savourysubsImg} alt="savoury subscriptions app" />
                         </a>
@@ -48,10 +58,20 @@ function Project() {
                     <div className="card mb-3">
                     <div className="card-body">
                             <h4 className="card-title">MEDiSEARCH</h4>
-                                <a href="https://github.com/rpanglia/Medisearch" target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
+                                <a href="https://github.com/ScalexanderB/Medisearch" target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
                                     GitHub Repository
                                 </a>
+                                <a href="https://med-i-search.herokuapp.com/" target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
+                                    Live Application
+                                </a>
                         </div>
+                        <section className="content mt-4 textBox">
+                            <ul>
+                                <li>Languages: Javascript, Handlebars, HTML</li>
+                                <li>Packages used: Argon2, Sequelize, Node.js, nodemon, mySql2, connect-session-sequelize, dotenv, express-handlebars, express-session, heroku</li>
+                                <li>Description: An app used for creating and managing hospital data.</li>
+                            </ul>
+                        </section>
                         <a href="https://med-i-search.herokuapp.com/" target="_blank" rel="noreferrer">
                             <img className="card-img-top" src={medisearchImg} alt="medisearch app" />
                         </a>
@@ -66,7 +86,17 @@ function Project() {
                                 <a href="https://github.com/ScalexanderB/activity-music" target="_blank" rel="noreferrer" className="btn btn-secondar btn-sm">
                                     GitHub Repository
                                 </a>
+                                <a href="https://scalexanderb.github.io/activity-music/" target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
+                                    Live Application
+                                </a>
                         </div>
+                        <section className="content mt-4 textBox">
+                            <ul>
+                                <li>Languages: HTML, CSS, Javascript</li>
+                                <li>Packages used: None</li>
+                                <li>Description: An app used for generating a playlist based on beats per minute.</li>
+                            </ul>
+                        </section>
                         <a href="https://scalexanderb.github.io/activity-music/" target="_blank" rel="noreferrer">
                             <img className="card-img-top" src={trainToTheBeatImg} alt="Train To The Beat app"/>
                         </a>
@@ -81,7 +111,17 @@ function Project() {
                                 <a href="https://github.com/ScalexanderB/Your-Note-Taker" target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
                                     GitHub Repository
                                 </a>
+                                <a href="https://mighty-mountain-08810.herokuapp.com/" target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
+                                    Live Application
+                                </a>
                         </div>
+                        <section className="content mt-4 textBox">
+                            <ul>
+                                <li>Languages: HTML, CSS, Javascript</li>
+                                <li>Packages used: express.js</li>
+                                <li>A basic note taking app built with Express.js.</li>
+                            </ul>
+                        </section>
                         <a href="https://mighty-mountain-08810.herokuapp.com/" target="_blank" rel="noreferrer">
                             <img className="card-img-top" src={noteTakerImg} alt="note taker app"/>
                         </a>
@@ -92,12 +132,22 @@ function Project() {
                 <SwiperSlide>
                     <div className="card mb-3">
                     <div className="card-body">
-                            <h4 className="card-title">Note-It</h4>
-                                <a href="https://github.com/rpanglia/Note-It"  target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
+                            <h4 className="card-title">Tech Blog</h4>
+                                <a href="https://github.com/ScalexanderB/blog-for-tech"  target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
                                     GitHub Repository
                                 </a>
+                                <a href="https://mighty-garden-10876.herokuapp.com/" target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
+                                    Live Application
+                                </a>
                         </div>
-                        <a href="https://note-it-97.herokuapp.com/" target="_blank" rel="noreferrer">
+                        <section className="content mt-4 textBox">
+                            <ul>
+                                <li>Javascript, Handlebars, CSS</li>
+                                <li>Packages used: bcrypt, connect-session-sequelize, dotenv, express, express-handlebars, express-session, mysql2, path, sequelize</li>
+                                <li>Description: A basic tech blog app that stores posts and information from users.</li>
+                            </ul>
+                        </section>
+                        <a href="https://mighty-garden-10876.herokuapp.com/" target="_blank" rel="noreferrer">
                             <img className="card-img-top" src={techBlogImg} alt="tech blog app"/>
                         </a>
                         
@@ -111,7 +161,17 @@ function Project() {
                                 <a href="https://github.com/ScalexanderB/Weather-Dashboard" target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
                                     GitHub Repository
                                 </a>
+                                <a href="https://scalexanderb.github.io/Weather-Dashboard/" target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
+                                    Live Application
+                                </a>
                         </div>
+                        <section className="content mt-4 textBox">
+                            <ul>
+                                <li>Languages: HTML, CSS, Javascript</li>
+                                <li>Packages used: None</li>
+                                <li>Description: A basic weather app which allows a user to search up a specific place or a saved place and view the weather.</li>
+                            </ul>
+                        </section>
                         <a href="https://scalexanderb.github.io/Weather-Dashboard/" target="_blank" rel="noreferrer">
                             <img className="card-img-top" src={weatherDashboardImg}alt="weather dashboard app"/>
                         </a>
@@ -126,7 +186,17 @@ function Project() {
                                 <a href="https://github.com/ScalexanderB/Workday-Scheduler" target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
                                     GitHub Repository
                                 </a>
+                                <a href="https://scalexanderb.github.io/Workday-Scheduler/" target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
+                                    Live Application
+                                </a>
                         </div>
+                        <section className="content mt-4 textBox">
+                            <ul>
+                                <li>Languages: HTML, CSS, Javascript</li>
+                                <li>Packages used: None</li>
+                                <li>Description: An app used for planning your work day, the app will save your inputs for future use.</li>
+                            </ul>
+                        </section>
                         <a href="https://scalexanderb.github.io/Workday-Scheduler/" target="_blank" rel="noreferrer">
                             <img className="card-img-top" src={workdaySchedulerImg} alt="workday scheduler app" />
                         </a>
