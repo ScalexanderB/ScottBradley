@@ -43,9 +43,9 @@ function Project() {
                         </div>
                         <section className="content mt-4 textBox">
                             <ul>
-                                <li>Javascript, React, CSS</li>
+                                <li>Languages: Javascript, React, CSS</li>
                                 <li>Packages used: Node.js, Express, Apollo, GraphQL, Mongoose, Stripe, heroku</li>
-                                <li>An app for creating a ingredients delivery subscription based on specific user requirements.</li>
+                                <li>Description: An app for creating a ingredients delivery subscription based on specific user requirements.</li>
                             </ul>
                         </section>
                         <a href="https://savoury-subscriptions.herokuapp.com/" target="_blank" rel="noreferrer">
@@ -119,7 +119,7 @@ function Project() {
                             <ul>
                                 <li>Languages: HTML, CSS, Javascript</li>
                                 <li>Packages used: express.js</li>
-                                <li>A basic note taking app built with Express.js.</li>
+                                <li>Description: A basic note taking app built with Express.js.</li>
                             </ul>
                         </section>
                         <a href="https://mighty-mountain-08810.herokuapp.com/" target="_blank" rel="noreferrer">
@@ -142,7 +142,7 @@ function Project() {
                         </div>
                         <section className="content mt-4 textBox">
                             <ul>
-                                <li>Javascript, Handlebars, CSS</li>
+                                <li>Languages: Javascript, Handlebars, CSS</li>
                                 <li>Packages used: bcrypt, connect-session-sequelize, dotenv, express, express-handlebars, express-session, mysql2, path, sequelize</li>
                                 <li>Description: A basic tech blog app that stores posts and information from users.</li>
                             </ul>

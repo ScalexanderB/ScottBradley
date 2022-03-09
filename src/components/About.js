@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
     return (
-        <div class="about-box">
+        <div className="about-box">
             <hr />
             <img src={process.env.PUBLIC_URL + '/img/LinkedIn picture.jpg'} alt="Scott Bradley"/>
             <div>

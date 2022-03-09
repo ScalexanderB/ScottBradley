@@ -20,15 +20,30 @@ function Resume() {
                 </a>  
             </div>
             <div className="column">
-                <h3 className="content is-medium">Skills</h3>
+                <h3 className="content is-medium">Front End Skills</h3>
                 <hr />
-                <ul>
-                    <li>HTML, CSS, Javascript</li>
-                    <li>JSON, APIs</li>
-                    <li>Markdown</li>
-                    <li>Git</li>
-                    <li>Github</li>
-                </ul>
+                    <ul className="content">
+                        <li>Javascript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                        <li>jQuery</li>
+                        <li>React</li>
+                    </ul>
+            </div>
+            <div className="column">
+                <h3 className="content is-medium">Back End Skills</h3>
+                <hr />
+                <ul className="content">
+                        <li>APIs</li>
+                        <li>SQL</li>
+                        <li>Express</li>
+                        <li>Node</li>
+                        <li>REST</li>
+                        <li>MySQL, Sequelize</li>
+                        <li>GraphQL</li>
+                        <li>MongoDB, Mongoose</li>
+                    </ul>
             </div>
         </div>
     );
