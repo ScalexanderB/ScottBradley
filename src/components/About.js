@@ -4,7 +4,7 @@ function About() {
     return (
         <div className="about-box">
             <hr />
-            <img src={process.env.PUBLIC_URL + '/img/LinkedIn picture.jpg'} alt="Scott Bradley"/>
+            <img src={process.env.PUBLIC_URL + '/img/IMG-9566.JPG'} alt="Scott Bradley"/>
             <div>
             <h2 className="content is-medium">Hi, I'm Scott Bradley.</h2>
             <p className="content mt-4 textBox">
