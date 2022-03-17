@@ -45,7 +45,7 @@ function Project() {
                             <ul>
                                 <li>Languages: Javascript, React, CSS</li>
                                 <li>Packages used: Node.js, Express, Apollo, GraphQL, Mongoose, Stripe, heroku</li>
-                                <li>Description: An app for creating a ingredients delivery subscription based on specific user requirements.</li>
+                                <li>Description: An app for creating an ingredients delivery subscription based on specific user requirements.</li>
                             </ul>
                         </section>
                         <a href="https://savoury-subscriptions.herokuapp.com/" target="_blank" rel="noreferrer">
