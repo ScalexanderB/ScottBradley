@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Navigation from "./Navigation";
 import About from "./About";
 import Contact from "./Contact";
-import Portfolio from "./Portfolio";
+import Project from "./Project";
 import Resume from "./Resume";
 
 function Header() {
@@ -14,7 +14,7 @@ function Header() {
             case "About":
                 return <About />;
             case "Portfolio":
-                return <Portfolio />;
+                return <Project />;
             case "Contact":
                 return <Contact />;
             case "Resume":
@@ -26,8 +26,8 @@ function Header() {
     };
 
     return (
-        <div>
-            <nav className="navbar">
+        <header className="flex-row">
+            <nav className="navbar flex-row">
                 <div className="navbar-brand">
                     <a
                       className="navbar-item"
@@ -41,17 +41,16 @@ function Header() {
                 </div>
             </nav>
             {/* Pass state value and the setter as props to the NavTabs */}
+            {/* Call renderPage function passing the currentPage in */}
+        
             <Navigation
                 currentPage={currentPage}
                 handlePageChange={handlePageChange}
             />
-            {/* Call renderPage function passing the currentPage in */}
-            <main>
                 <div>
                     {renderPage(currentPage)}
-                </div>
-            </main>    
-        </div>
+                </div>  
+        </header>
     );
 }
 

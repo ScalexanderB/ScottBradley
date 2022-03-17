@@ -17,10 +17,6 @@ body {
   color: var(--tertiary-color)
 }
 
-.content.is-large {
-  font-size: 40px;
-}
-
 .navbar-item img {
   max-height: 35px;
   height: 50px;
@@ -42,8 +38,22 @@ body {
 }
 
 .navbar-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   margin-bottom: 27px;
   font-size: 10px;
+  color: var(--primary-color)
+}
+
+.tabs {
+  background-color: var(--tertiary-color);
+}
+
+.tabs ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .navbar, .navbar-brand {
@@ -51,11 +61,12 @@ body {
   display: block;
   width: 100%;
   background-color: var(--tertiary-color);
-  color: var(--secondary-color)
+  color: var(--secondary-color);
+
 }
 
 .tabs a {
-  color: var(--tertiary-color);
+  color: var(--primary-color);
   font-size: 20px;
   transition: all 0.3s ease;
 }
@@ -72,10 +83,7 @@ body {
   font-weight: bold;
 }
 
-h3 {
-  color: var(--secondary-color);
-  font-weight: bolder;
-}
+
 
 .label {
   color: var(--secondary-color);
@@ -88,19 +96,28 @@ div.navbar-brand {
 
 .navbar .navbar-brand > .navbar-item,
 .navbar .navbar-brand .navbar-link {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
 }
 
-.button, .proj-link {
+.button, .proj-link, .btn {
   background-color: var(--secondary-color);
-  color: var(--primary-color);
+  color: var(--tertiary-color);
   transition: all 0.3s ease;
   border: none;
-  border-radius: 6px;
+  border-radius: 2px;
 }
 
-.button:hover, .proj-link:hover {
-  background-color: #e59335;
+.button:hover, .proj-link:hover, .btn:hover {
+  background-color: #f75a00;
+  color: var(--tertiary-color);
+}
+
+.btn {
+  padding: 5px 7px 5px 7px;
+  margin: 8px;
 }
 
 .is-family-code {
@@ -114,11 +131,6 @@ main {
   margin-bottom: 2em;
   margin-left: 30em;
   margin-right: 30em;
-}
-
-.my-pic {
-  width: 250px;
-  border-radius: 10px;
 }
 
 .label {
@@ -140,16 +152,100 @@ footer.footer {
 }
 
 .my-logo {
-  height: 50px;
-  width: 50px;
+ width: 60px;
 }
 
+.nav-tabs {
+  height: 100px;
+}
 
+.head-name {
+  color: var(--primary-color);
+  background-color: var(--tertiary-color);
+  font-weight: bold;
+  font-size: 45px;
+}
 
+.nav {
+  padding: 5px;
+}
 
+.about-box {
+  display: flex;
+  justify-content: left;
+  padding: 10px;
+  margin-bottom: 25px;
+  margin-left:25px;
+  margin-right: 25px;
+}
+
+.about-box img {
+  max-height: 250px;
+  margin-right: 25px;
+  width: 250px;
+  border-radius: 9px;
+}
+
+.about-box p, h2 {
+  text-align: left;
+}
+
+.about-box h2 {
+  color: var(--tertiary-color);
+  font-weight: bolder;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  color: var(--secondary-color);
+}
+
+.swiper-pagination-bullet {
+  background: var(--tertiary-color);
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--secondary-color);
+}
+
+.card-img-top {
+  max-height: 75%;
+  max-width: 75%;
+  border-radius: 25px;
+  margin-top: 5px;
+}
+
+.card {
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+  
+}
+
+.card-title {
+  color: var(--tertiary-color);
+  font-size: 30px;
+  padding-bottom: 8px;
+}
+
+.card ul {
+  list-style-type: none;
+}
+
+.contact-me {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 30px 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.column {
+  margin-bottom: 10px;
+}
 /* media query */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 2000px) {
   main {
     margin-top: 2em;
     margin-bottom: 2em;
@@ -157,3 +253,4 @@ footer.footer {
     margin-right: 2em;
   }
 }
+

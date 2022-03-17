@@ -1,10 +1,16 @@
-import React from "react";
+import React from "react"
 
 function Navigation(props) {
     const tabs = ["About", "Portfolio", "Contact", "Resume"];
     return (
-        <div className="tabs is-centered test">
-            <ul className="nav nav-tabs">
+        
+        <div className="tabs">
+            <nav className="navbar flex-row">
+                
+                        
+            <ul className="nav">
+                <img className="my-logo" src={process.env.PUBLIC_URL + '/img/image2vector.svg'} alt="Scott Bradley Logo"/>
+                <span className="content is-large" class="head-name">Scott Bradley</span>
                 {tabs.map((tab) => (
                     <li
                     className={
@@ -18,14 +24,19 @@ function Navigation(props) {
                           //the current page is set through the handlePageChange props.
                           onClick={() => props.handlePageChange(tab)}
                           className={
-                              props.currentPage === tab ? "nav-link active" : "nav-link"
+                              props.currentPage === tab ? "navActive" : "nav-link"
                           }
                           >
+                              
                               {tab}
+                              
                           </a>
+                          
                     </li>
                 ))}
+        
             </ul>
+            </nav>
         </div>
     );
 }

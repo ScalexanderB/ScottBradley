@@ -37,21 +37,54 @@ function Contact() {
     };
 
     return (
-        <div>
-            <h3 className="content is-medium">Contact Me</h3>
-            <hr />
+        <div className='contact-me'>
+            <h3 className="content is-medium ">Contact Me</h3>
+            <div>   
+                <h4 className='content is-small'>Click the following links to reach me:</h4>
+                    <a href="https://github.com/ScalexanderB" target="_blank" rel="noreferrer">
+                      <img className="social-link" src="img/iconfinder-icon2.svg" alt="Github Logo"/>
+                    </a>
+                    <a href="mailto:scottabradley91@gmail.com"
+                    target="_blank" rel="noreferrer">
+                      <img className='social-link' src="img/103176_mail_email_icon (1).svg" alt="Email Logo"/>   
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/scottalexanderb/" target="_blank" rel="noreferrer">
+                      <img className="social-link" src="img/104493_linkedin_icon.svg" alt="LinkedIn Logo"/>        
+                    </a>
+            </div>
             <form id="contact-form" onSubmit={handleSubmit}>
                 <div className="field">
                     <label className="label" htmlFor="name">Name</label>
-                    <input className="input" type="text" name="name" defaultValue={name} onBlur={handleChange} /> 
+                    <input 
+                           className="input" 
+                           type="text" 
+                           name="name"
+                           placeholder="Scott Bradley" 
+                           defaultValue={name} 
+                           onBlur={handleChange} 
+                    /> 
                 </div>
                 <div className="field">
                     <label className="label" htmlFor="email">Email Address</label>
-                    <input className="input" type="email" name="email" defaultValue={email} onBlur={handleChange} />
+                    <input 
+                           className="input" 
+                           type="email" 
+                           name="email"
+                           placeholder='scottabradley91@gmail.com' 
+                           defaultValue={email} 
+                           onBlur={handleChange} 
+                    />
                 </div>
                 <div className="field">
                     <label className="label" htmlFor="message">Message</label>
-                    <textarea className="textarea" name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+                    <textarea 
+                            className="textarea" 
+                            name="message" 
+                            rows="5"
+                            placeholder='Enter a message..' 
+                            defaultValue={message} 
+                            onBlur={handleChange} />
                 </div>
                 {errorMessage && (
                     <div>
@@ -60,6 +93,7 @@ function Contact() {
                 )}
                 <button className="button is-medium is-fullwidth" data-testid="button">Submit</button>
             </form>
+                    
         </div>
     );
 }
