@@ -1,16 +1,27 @@
-import React from "react"
+import React, { useState } from "react"
+import Hamburger from "./Hamburger";
 
 function Navigation(props) {
+
+    const [hamburgerOpen, setHamburgerOpen] = useState(true);
+
+    const toggleHamburger = () =>{
+        setHamburgerOpen(!hamburgerOpen)
+    }
+
     const tabs = ["About", "Portfolio", "Contact", "Resume"];
+
     return (
         
         <div className="tabs">
             <nav className="navbar flex-row">
-                
+            <div className="logo-name">
+            <img className="my-logo" src={process.env.PUBLIC_URL + '/img/image2vector.svg'} alt="Scott Bradley Logo"/>
+                <span className="content is-large" class="head-name">Scott Bradley</span>
+            </div>     
                         
             <ul className="nav">
-                <img className="my-logo" src={process.env.PUBLIC_URL + '/img/image2vector.svg'} alt="Scott Bradley Logo"/>
-                <span className="content is-large" class="head-name">Scott Bradley</span>
+                
                 {tabs.map((tab) => (
                     <li
                     className={
@@ -34,9 +45,38 @@ function Navigation(props) {
                           
                     </li>
                 ))}
-        
+            
             </ul>
+            <div className="hamburger" onClick={toggleHamburger}>
+                <Hamburger isOpen={hamburgerOpen}/>
+            </div>
+            
             </nav>
+
+            <style jsx>{`
+                
+                .hamburger{
+                    opacity: 0;
+                    z-index: 6;
+                }
+
+                @media (max-width: 786px){
+                    .hamburger{
+                        padding-left: 2px;
+                        margin: 1px;
+                        opacity: 1;
+                        z-index: 6;
+                    }
+                    .navbar ul{
+                        display: ${hamburgerOpen ? 'inline' : 'none'};
+                       height: max-content;
+                       background-color: #FFFFFF;
+                       width: 50vw;
+                       margin-top:286px;
+                       position: fixed;
+                   }
+                }
+            `}</style>
         </div>
     );
 }
