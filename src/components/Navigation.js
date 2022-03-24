@@ -45,7 +45,7 @@ function Navigation(props) {
                           
                     </li>
                 ))}
-            
+                
             </ul>
             <div className="hamburger" onClick={toggleHamburger}>
                 <Hamburger isOpen={hamburgerOpen}/>

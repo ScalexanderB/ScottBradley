@@ -23,7 +23,7 @@ export default function Hamburger({ isOpen }){
                     width: 2rem;
                     height: 0.25rem;
                     border-radius: 10px;
-                    background-color: black;
+                    background-color: #081B33;
                     transform-origin: 1px;
                     transition: all 0.3s linear;
                 }
@@ -33,7 +33,7 @@ export default function Hamburger({ isOpen }){
                 }
                 .burger2{
                     transform: ${ isOpen ? 'translateX(100%)' : 'translateX(0)'};
-                    opacity: ${ isOpen ? 0 : 1};
+                    display: ${ isOpen ? 'none' : 'inline'};
                 }
                 .burger3{
                     transform: ${ isOpen ? 'rotate(-45deg)' : 'rotate(0)'};
