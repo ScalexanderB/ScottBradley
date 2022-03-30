@@ -3,7 +3,7 @@ import Hamburger from "./Hamburger";
 
 function Navigation(props) {
 
-    const [hamburgerOpen, setHamburgerOpen] = useState(true);
+    const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
     const toggleHamburger = () =>{
         setHamburgerOpen(!hamburgerOpen)
