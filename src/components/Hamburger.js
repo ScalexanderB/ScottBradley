@@ -38,6 +38,10 @@ export default function Hamburger({ isOpen }){
                 .burger3{
                     transform: ${ isOpen ? 'rotate(-45deg)' : 'rotate(0)'};
                 }
+
+                .hamburger:hover {
+                    cursor: pointer;
+                }
                 `}</style>
         </>
     )
