@@ -3,7 +3,7 @@ This is an updated portfolio which is made using React, it contains 6 projects, 
 
 
 ## Deployed Link
-[Check out the site](https://scalexanderb.github.io/scott-react-portfolio/#about)
+[Check out the site](https://scalexanderb.github.io/scottbradley/)
 
 ## Screenshot
 
