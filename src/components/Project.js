@@ -10,6 +10,9 @@ import noteTakerImg from '../assets/Screen Capture 018 - Note Taker - mighty-mou
 import weatherDashboardImg from '../assets/Screen Capture 017 - Weather Dashboard - scalexanderb.github.io.jpg';
 import workdaySchedulerImg from '../assets/Screen Capture 014 - Work Day Scheduler - scalexanderb.github.io.jpg';
 import techBlogImg from '../assets/Screen Capture 021 - The Tech Blog - mighty-garden-10876.herokuapp.com.jpg';
+import passwordGenImg from '../assets/PW gen pic.PNG';
+import budgetTrackerImg from '../assets/Screen Capture 022 - Budget Tracker - fast-shelf-17349.herokuapp.com.jpg';
+import javascriptQuizImg from '../assets/Javascript Quiz.jpg'
 
 SwiperCore.use([Pagination, Navigation]); 
 
@@ -199,6 +202,78 @@ function Project() {
                         </section>
                         <a href="https://scalexanderb.github.io/Workday-Scheduler/" target="_blank" rel="noreferrer">
                             <img className="card-img-top" src={workdaySchedulerImg} alt="workday scheduler app" />
+                        </a>
+                        
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="card mb-3">
+                    <div className="card-body">
+                            <h4 className="card-title">Password Generator</h4>
+                                <a href="https://github.com/ScalexanderB/PasswordGenerator" target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
+                                    GitHub Repository
+                                </a>
+                                <a href="https://scalexanderb.github.io/PasswordGenerator/" target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
+                                    Live Application
+                                </a>
+                        </div>
+                        <section className="content mt-4 textBox">
+                            <ul>
+                                <li>Languages: HTML, CSS, Javascript</li>
+                                <li>Packages used: None</li>
+                                <li>Description: An app used to randomly generate a password based off user inputs.</li>
+                            </ul>
+                        </section>
+                        <a href="https://scalexanderb.github.io/PasswordGenerator/" target="_blank" rel="noreferrer">
+                            <img className="card-img-top" src={passwordGenImg} alt="password generator app" />
+                        </a>
+                        
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="card mb-3">
+                    <div className="card-body">
+                            <h4 className="card-title">Budget Tracker</h4>
+                                <a href="https://github.com/ScalexanderB/Easy-Budget-Tracker" target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
+                                    GitHub Repository
+                                </a>
+                                <a href="https://fast-shelf-17349.herokuapp.com/" target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
+                                    Live Application
+                                </a>
+                        </div>
+                        <section className="content mt-4 textBox">
+                            <ul>
+                                <li>Languages: HTML, CSS, Javascript </li>
+                                <li>Packages used: MongoDB, Mongoose, express.js</li>
+                                <li>Description: An app used for tracking a users spending and budget.</li>
+                            </ul>
+                        </section>
+                        <a href="https://fast-shelf-17349.herokuapp.com/" target="_blank" rel="noreferrer">
+                            <img className="card-img-top" src={budgetTrackerImg} alt="budget tracker app" />
+                        </a>
+                        
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="card mb-3">
+                    <div className="card-body">
+                            <h4 className="card-title">Javascript Quiz</h4>
+                                <a href="https://github.com/ScalexanderB/Javascript-Quiz" target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
+                                    GitHub Repository
+                                </a>
+                                <a href="https://scalexanderb.github.io/Javascript-Quiz/" target="_blank" rel="noreferrer" className="btn btn-secondary btn-sm">
+                                    Live Application
+                                </a>
+                        </div>
+                        <section className="content mt-4 textBox">
+                            <ul>
+                                <li>Languages: HTML, CSS, Javascript </li>
+                                <li>Packages used: None.</li>
+                                <li>Description: An app that has you complete a timed quiz based on Javascript knowledge.</li>
+                            </ul>
+                        </section>
+                        <a href="https://scalexanderb.github.io/Javascript-Quiz/" target="_blank" rel="noreferrer">
+                            <img className="card-img-top" src={javascriptQuizImg} alt="javascript quiz app" />
                         </a>
                         
                     </div>

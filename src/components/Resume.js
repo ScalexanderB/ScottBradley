@@ -9,7 +9,7 @@ function Resume() {
 
                 <a
                   className="button"
-                  href={process.env.PUBLIC_URL + "/ScottRes17.pdf"}
+                  href={process.env.PUBLIC_URL + "/ScottRes22.pdf"}
                   target="_blank"
                   rel="noreferrer"
                 >
